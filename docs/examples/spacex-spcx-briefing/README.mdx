@@ -2,14 +2,14 @@
 title: SpaceX (SPCX) Financial Briefing
 description: Generate a quantitative SpaceX (NASDAQ&#58; SPCX) financial briefing in a single Agent API call using the finance_search tool. Showcases segment, KPI, and backlog data for a newly-listed ticker.
 sidebar_position: 8
-keywords: [agent-api, finance-search, spcx, spacex, equity-research, ipo, segment-revenue, starlink, fiscal-ai]
+keywords: [agent-api, finance-search, spcx, spacex, equity-research, ipo, segment-revenue, starlink]
 ---
 
 # SpaceX (SPCX) Financial Briefing
 
 A focused, single-shot example showing how Perplexity's [Agent API](https://docs.perplexity.ai/docs/agent-api/quickstart) and the [`finance_search`](https://docs.perplexity.ai/docs/agent-api/tools/finance-search) tool ([launch announcement](https://www.perplexity.ai/hub/blog/introducing-finance-search-in-the-agent-api)) produce a quantitative briefing on a freshly-listed ticker — in this case **NASDAQ: SPCX**, Space Exploration Technologies Corp. (SpaceX), which filed its S-1 in May 2026.
 
-Most equity-research walkthroughs hit large-cap, mature tickers where every field is well-populated. `finance_search` is more interesting on a fresh listing: the moment Perplexity's finance data provider ([fiscal.ai](https://fiscal.ai)) flips the ticker on, the model can pull structured segment revenue (Connectivity / Space / AI), Starlink subscriber KPIs, satellites in orbit, and backlog directly out of the S-1 — no scraping, no PDF parsing.
+Most equity-research walkthroughs hit large-cap, mature tickers where every field is well-populated. `finance_search` is more interesting on a fresh listing: the moment Perplexity's finance data provider flips the ticker on, the model can pull structured segment revenue (Connectivity / Space / AI), Starlink subscriber KPIs, satellites in orbit, and backlog directly out of the S-1 — no scraping, no PDF parsing.
 
 ## Features
 
@@ -85,7 +85,7 @@ That's the entire interface — no ticker argument needed; this example is purpo
 
 ## 2. FY2023–FY2025 P&L trajectory
 
-| Fiscal year | Revenue   | Gross margin | Operating margin | Net margin |
+| Reporting year | Revenue   | Gross margin | Operating margin | Net margin |
 |-------------|----------:|-------------:|-----------------:|-----------:|
 | FY2023      | $10.387B  | 41%          | (34%)            | (45%)      |
 | FY2024      | $14.015B  | 43%          | 3%               | 6%         |
@@ -205,11 +205,11 @@ See [Perplexity Pricing](https://docs.perplexity.ai/docs/getting-started/pricing
 
 ## Data Source
 
-Structured SPCX financial data returned by `finance_search` is sourced from [fiscal.ai](https://fiscal.ai), Perplexity's finance data provider. fiscal.ai covers 50,000+ public companies; SPCX coverage launched alongside the SpaceX S-1 filing in May 2026.
+Structured SPCX financial data returned by `finance_search` comes from Perplexity's finance data provider. SPCX coverage launched alongside the SpaceX S-1 filing in May 2026.
 
 ## Limitations
 
-- Results depend on Perplexity's (and upstream fiscal.ai's) coverage of the ticker. Coverage and field availability for newly-listed tickers can evolve over the days following a filing.
+- Results depend on Perplexity's upstream coverage of the ticker. Coverage and field availability for newly-listed tickers can evolve over the days following a filing.
 - This is not investment advice. The "Bottom line" section is explicitly framed as analytical opinion, not a recommendation.
 
 ## Resources

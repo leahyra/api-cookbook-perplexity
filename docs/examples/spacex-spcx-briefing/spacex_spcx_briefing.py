@@ -11,7 +11,7 @@ field is well-populated. ``finance_search`` is more interesting on a fresh
 listing: SpaceX filed its S-1 in May 2026 and ``finance_search`` picks up the
 filing data — segment revenue (Connectivity / Space / AI), Starlink subscriber
 KPIs, satellites in orbit, total backlog — the moment Perplexity's finance
-data provider (fiscal.ai) flips the ticker on.
+data provider flips the ticker on.
 
 This script issues **one** Agent API call and prints the model's briefing plus
 the raw ``finance_results`` blocks returned by the tool, so you can see both
@@ -93,7 +93,7 @@ Then write the briefing in this exact section order:
 1. **Snapshot** — latest price, market cap, day range, and the timestamp
    returned by finance_search.
 2. **FY2023–FY2025 P&L trajectory** — revenue, gross profit, operating income,
-   and net income for each of the three fiscal years. Comment briefly on the
+   and net income for each of the three reported years. Comment briefly on the
    margin trend.
 3. **Segment mix (FY2025)** — total revenue by segment: Connectivity (Starlink),
    Space (launch services + dev), and Artificial Intelligence. Include each
@@ -103,7 +103,7 @@ Then write the briefing in this exact section order:
    government revenue split.
 5. **Capacity & backlog** — total backlog, % of backlog to be recognized over
    the next twelve months, Falcon launches, Starship launches, and mass to
-   orbit (metric tons) for the latest fiscal year.
+   orbit (metric tons) for the latest reported year.
 6. **Bottom line** — 2 sentences. Label this as analytical opinion, not a
    recommendation."""
 
