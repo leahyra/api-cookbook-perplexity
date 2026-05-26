@@ -7,7 +7,7 @@ keywords: [agent-api, finance-search, spcx, spacex, equity-research, ipo, segmen
 
 # SpaceX (SPCX) Financial Briefing
 
-A focused, single-shot example showing how Perplexity's [Agent API](https://docs.perplexity.ai/docs/agent-api/quickstart) and the [`finance_search`](https://docs.perplexity.ai/docs/agent-api/tools/finance-search) tool produce a quantitative briefing on a freshly-listed ticker — in this case **NASDAQ: SPCX**, Space Exploration Technologies Corp. (SpaceX), which filed its S-1 in May 2026.
+A focused, single-shot example showing how Perplexity's [Agent API](https://docs.perplexity.ai/docs/agent-api/quickstart) and the [`finance_search`](https://docs.perplexity.ai/docs/agent-api/tools/finance-search) tool ([launch announcement](https://www.perplexity.ai/hub/blog/introducing-finance-search-in-the-agent-api)) produce a quantitative briefing on a freshly-listed ticker — in this case **NASDAQ: SPCX**, Space Exploration Technologies Corp. (SpaceX), which filed its S-1 in May 2026.
 
 Most equity-research walkthroughs hit large-cap, mature tickers where every field is well-populated. `finance_search` is more interesting on a fresh listing: the moment Perplexity's finance data provider ([fiscal.ai](https://fiscal.ai)) flips the ticker on, the model can pull structured segment revenue (Connectivity / Space / AI), Starlink subscriber KPIs, satellites in orbit, and backlog directly out of the S-1 — no scraping, no PDF parsing.
 
@@ -22,7 +22,7 @@ Most equity-research walkthroughs hit large-cap, mature tickers where every fiel
 ## Prerequisites
 
 - Python 3.9+
-- A Perplexity API key with Agent API access. `finance_search` is currently in beta — see the [Finance Search docs](https://docs.perplexity.ai/docs/agent-api/tools/finance-search) for availability.
+- A Perplexity API key with Agent API access. See the [Finance Search docs](https://docs.perplexity.ai/docs/agent-api/tools/finance-search) and the [launch announcement](https://www.perplexity.ai/hub/blog/introducing-finance-search-in-the-agent-api) for capabilities and coverage.
 
 ## Installation
 
@@ -209,12 +209,12 @@ Structured SPCX financial data returned by `finance_search` is sourced from [fis
 
 ## Limitations
 
-- `finance_search` is currently in beta and may not be enabled on all API keys
 - Results depend on Perplexity's (and upstream fiscal.ai's) coverage of the ticker. Coverage and field availability for newly-listed tickers can evolve over the days following a filing.
 - This is not investment advice. The "Bottom line" section is explicitly framed as analytical opinion, not a recommendation.
 
 ## Resources
 
+- [Introducing Finance Search in the Agent API](https://www.perplexity.ai/hub/blog/introducing-finance-search-in-the-agent-api) — launch announcement
 - [Agent API Quickstart](https://docs.perplexity.ai/docs/agent-api/quickstart)
 - [Finance Search Tool](https://docs.perplexity.ai/docs/agent-api/tools/finance-search)
 - [Agent API Tools Overview](https://docs.perplexity.ai/docs/agent-api/tools)
