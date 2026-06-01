@@ -16,7 +16,7 @@ The whole agent loop runs inside **one background Agent API request**:
 
 The script polls the request to completion, pulls the CSV out of the sandbox's stdout, saves it, and renders the line chart **locally** with matplotlib.
 
-![AAPL closing price chart, last month](../../static/img/finance-chart-sandbox-aapl.png)
+![AAPL closing price chart, last month](https://raw.githubusercontent.com/perplexityai/api-cookbook/main/static/img/finance-chart-sandbox-aapl.png)
 
 ## How it differs from the docs (important)
 
@@ -151,7 +151,7 @@ frontend (vanilla JS + [Chart.js](https://www.chartjs.org/) from a CDN — no
 build step) renders the chart on the `chart` event, appends the streamed
 analysis live, and links to the raw JSON for inspection.
 
-![Finance Chart sandbox web UI](../../static/img/finance-chart-sandbox-ui.png)
+![Finance Chart sandbox web UI](https://raw.githubusercontent.com/perplexityai/api-cookbook/main/static/img/finance-chart-sandbox-ui.png)
 
 ### Run it
 
